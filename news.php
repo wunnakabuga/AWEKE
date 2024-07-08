@@ -1,114 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif; margin: 0;}
-* {box-sizing: border-box;}
-
-/* Top Bar Styles */
-.top-bar {
-  overflow: hidden;
-  background-color: #333;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.top-bar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.top-bar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.top-bar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Container Styles */
-.container {
-  padding: 20px;
-}
-
-/* News Section Styles */
-.news-section {
-  padding: 50px;
-  text-align: left;
-  background-color: #f9f9f9;
-}
-
-.news-section h2 {
-  text-align: center;
-  color: #333;
-}
-
-.news-article {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
-
-.news-article h3 {
-  margin: 0;
-  color: #04AA6D;
-}
-
-.news-article p {
-  margin: 10px 0;
-}
-
-/* Reviews Section Styles */
-.reviews-section {
-  padding: 50px;
-  text-align: left;
-  background-color: #fff;
-}
-
-.reviews-section h2 {
-  text-align: center;
-  color: #333;
-}
-
-.review {
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-}
-
-.review h3 {
-  margin: 0;
-  color: #04AA6D;
-}
-
-.review p {
-  margin: 10px 0;
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 600px) {
-  .top-bar a {float: none; width: 100%; text-align: left;}
-  .news-article, .review {text-align: center;}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Aweke Farm</title>
+    <link rel="stylesheet" href="news.css">
 </head>
 <body>
-
 <!-- Top Bar -->
 <div class="top-bar">
-  <a href="index.html" class="active">Home</a>
-  <a href="dairy.html">Dairy</a>
-  <a href="poultry.html">Poultry</a>
-  <a href="bee.html">Bee</a>
-  <a href="about.html">About</a>
-  <a href="news.html">News</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.php" class="active">Home</a>
+  <a href="dairy.php">Dairy</a>
+  <a href="poultry.php">Poultry</a>
+  <a href="bee.php">Bee</a>
+  <a href="about.php">About</a>
+  <a href="news.php">News</a>
+  <a href="contact.php">Contact</a>
 </div>
 
 <!-- News Section -->
@@ -147,5 +54,3 @@ body {font-family: Arial, Helvetica, sans-serif; margin: 0;}
 
 </body>
 </html>
-
-
