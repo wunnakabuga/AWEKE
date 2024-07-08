@@ -24,7 +24,11 @@
 
 <div class="about-section">
     <h1>About Us</h1>
-    <p>Welcome to Aweke Land Selling Company, where dreams of property ownership become reality. <br>With a commitment to integrity, transparency, and excellence, we specialize in facilitating the acquisition and sale of prime land parcels tailored to your desires. <br>Our mission is simple: to empower individuals and families to find their perfect piece of land, whether for residential, commercial, or investment purposes.<br> Backed by a team of dedicated professionals, we offer personalized service every step of the way, ensuring a seamless and rewarding experience. <br>At Aweke Land Selling Company, we don't just sell land; we pave the way for a brighter future and endless possibilities.</p>
+    <p>Welcome to Aweke Land Selling Company, where dreams of property ownership become reality. <br>
+    With a commitment to integrity, transparency, and excellence, we specialize in facilitating the acquisition and sale of prime land parcels tailored to your desires. <br>
+    Our mission is simple: to empower individuals and families to find their perfect piece of land, whether for residential, commercial, or investment purposes.<br>
+    Backed by a team of dedicated professionals, we offer personalized service every step of the way, ensuring a seamless and rewarding experience. <br>
+    At Aweke Land Selling Company, we don't just sell land; we pave the way for a brighter future and endless possibilities.</p>
     <p>Feel free to visit our offices at Tilisi Limuru KE</p>
 </div>
 
@@ -45,12 +49,12 @@
 
     <div class="column">
         <div class="card">
-            <img src="charles.jpg" alt="Charles kabuga">
+            <img src="charles.jpg" alt="Charles Kabuga">
             <div class="container">
-                <h2>Charles kabuga</h2>
+                <h2>Charles Kabuga</h2>
                 <p class="title">Art Director</p>
-                <p>Mike's creative vision and expertise drive our branding and marketing efforts, ensuring we reach the right audience.</p>
-                <p>mike@example.com</p>
+                <p>Charles's creative vision and expertise drive our branding and marketing efforts, ensuring we reach the right audience.</p>
+                <p>oneofwunson@gmail.com</p>
                 <p><button class="button">Contact</button></p>
             </div>
         </div>
@@ -58,12 +62,12 @@
 
     <div class="column">
         <div class="card">
-            <img src="gunna.jpg" alt="sergio giavanni kitchens">
+            <img src="gunna.jpg" alt="Sergio Giavanni Kitchens">
             <div class="container">
-                <h2>Sergio Giovanni Kitchens</h2>
+                <h2>Sergio Giavanni Kitchens</h2>
                 <p class="title">Designer</p>
-                <p>John's innovative designs and attention to detail bring our properties to life, creating spaces that are both functional and beautiful.</p>
-                <p>john@example.com</p>
+                <p>Sergio Giavanni Kitchens, aka Gunna, merges his legendary rap career with a farm project, infusing it with his innovative design and sustainable agriculture ideas. His unique vision and creative flair elevate the farm into a stylish, eco-friendly haven while reflecting his artistic legacy.</p>
+                <p>gunnawunna1@icloud.com</p>
                 <p><button class="button">Contact</button></p>
             </div>
         </div>
