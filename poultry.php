@@ -24,7 +24,7 @@
     <div class="row">
         <div class="column">
             <div class="card">
-                <img src="turkeyyy.jpg" alt="Turkey meat">
+                <img src="turkey.jpg" alt="Turkey meat">
                 <h3>Turkey Meat</h3>
                 <p>Known for its lean quality and mild flavor, turkey meat is commonly consumed during holidays like Thanksgiving. It is available in various forms, including whole turkey, turkey breasts, ground turkey, and deli slices, and is used in a variety of dishes from roasts to sandwiches.</p>
             </div>

@@ -1,52 +1,44 @@
 <?php
-include 'dbConnection.php';
+session_start();
 
-// Function to set remember me cookie
-function setRememberMeCookie($username) {
-    $cookie_name = "remember_me";
-    $cookie_value = $username;
-    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 30 days
-}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Database connection
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "AWEKE_FARM"; // Replace with your actual database name
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['username']) && isset($_POST['password'])) {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $remember_me = isset($_POST['remember_me']);
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-        // Prepare statement to fetch user data
-        $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
-        $stmt->bind_param("s", $username);
-        $stmt->execute();
-        $result = $stmt->get_result();
-
-        if ($result->num_rows > 0) {
-            $user = $result->fetch_assoc();
-            if (password_verify($password, $user['password'])) {
-                // Password is correct, start session
-                session_start();
-                $_SESSION['username'] = $user['username'];
-
-                // Set remember me cookie if checked
-                if ($remember_me) {
-                    setRememberMeCookie($username);
-                }
-
-                header("Location: index.php");
-                exit();
-            } else {
-                echo "Invalid password.";
-            }
-        } else {
-            echo "No user found with this username.";
-        }
-
-        $stmt->close();
-    } else {
-        echo "Username or Password is not set.";
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
+
+    // Sanitize input to prevent SQL injection
+    $email = $conn->real_escape_string($_POST['email']);
+    $password = $conn->real_escape_string($_POST['password']);
+
+    // Query to check if the user exists
+    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // User exists
+        $_SESSION['loggedin'] = true;
+        $_SESSION['email'] = $email;
+        echo "Login successful";
+    } else {
+        // User does not exist
+        echo "Invalid email or password";
+    }
+
+    // Close the connection
+    $conn->close();
+} else {
+    echo "Invalid request method";
 }
-$conn->close();
 ?>
 
 

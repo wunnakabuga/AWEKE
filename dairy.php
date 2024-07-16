@@ -38,7 +38,7 @@
             </div>
             <div class="column">
                 <div class="card">
-                    <img src="yogurt.jpg" alt="Yogurt">
+                    <img src="yougurt.jpg" alt="Yogurt">
                     <h3>Yogurt</h3>
                     <p>Our yogurt is made from the freshest milk and contains live cultures for a healthy and delicious treat.</p>
                 </div>
